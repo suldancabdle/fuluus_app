@@ -14,10 +14,13 @@
         }
 
         :root {
-            --primary-blue: #1a73e8;
-            --dark-blue: #0d47a1;
-            --light-blue: #e8f0fe;
-            --accent-green: #34a853;
+            /* Updated to your 3-color palette */
+            --primary-blue: #4C8C4A;    /* The darker green for buttons/icons */
+            --dark-blue: #3d703b;       /* A slightly darker shade for gradients */
+            --light-blue: #E9F5E9;      /* The pale mint for backgrounds */
+            --accent-green: #BADA55;    /* The lime green for highlights/badges */
+            
+            /* Standard Colors */
             --dark-bg: #0f1419;
             --card-bg: #ffffff;
             --text-primary: #202124;
@@ -118,7 +121,7 @@
         /* Hero Section */
         .hero {
             padding: 80px 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, var(--light-blue) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -129,7 +132,7 @@
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(26, 115, 232, 0.1) 0%, rgba(26, 115, 232, 0) 70%);
+            background: radial-gradient(circle, rgba(76, 140, 74, 0.1) 0%, rgba(76, 140, 74, 0) 70%);
             top: -150px;
             right: -100px;
         }
@@ -153,8 +156,12 @@
             color: var(--text-primary);
         }
 
+        /* Specific fix for the Hero highlight to use the Lime Green */
         .hero h1 .highlight {
             color: var(--primary-blue);
+            background-color: rgba(186, 218, 85, 0.3);
+            padding: 0 5px;
+            border-radius: 4px;
         }
 
         .hero p {
@@ -261,7 +268,7 @@
             padding: 24px;
             color: white;
             margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(26, 115, 232, 0.2);
+            box-shadow: 0 8px 16px rgba(76, 140, 74, 0.2);
         }
 
         .balance-title {
@@ -334,11 +341,11 @@
         }
 
         .feature-card {
-            background: #f8f9fa;
+            background: var(--light-blue);
             border-radius: 20px;
             padding: 36px 28px;
             text-align: center;
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(76, 140, 74, 0.1);
             transition: all 0.3s ease;
         }
 
@@ -374,7 +381,7 @@
         /* Supported Platforms */
         .platforms {
             padding: 60px 0;
-            background-color: #f8f9fa;
+            background-color: var(--light-blue);
         }
 
         .platforms-grid {
@@ -425,11 +432,12 @@
             text-align: center;
         }
 
+        /* Update the Security Badge to use the Mint and Forest Green */
         .security-badge {
             display: inline-flex;
             align-items: center;
-            background: #e8f5e9;
-            color: var(--accent-green);
+            background: var(--light-blue) !important;
+            color: var(--primary-blue) !important;
             padding: 12px 24px;
             border-radius: 50px;
             font-weight: 600;
@@ -496,7 +504,7 @@
         }
 
         .footer-app-name span {
-            color: #8ab4f8;
+            color: var(--accent-green);
         }
 
         .footer-links {
@@ -634,7 +642,6 @@
                         </div>
                     </a>
                     
-                    <!-- UPDATED APP STORE LINK -->
                     <a href="https://fuluus-exchange.somaliex.com/myapp#home" class="download-btn app-store" target="_blank">
                         <i class="fab fa-apple"></i>
                         <div class="btn-text">
@@ -650,7 +657,7 @@
                     <div class="phone-screen">
                         <div class="screen-header">
                             <div class="app-logo-small">
-                                <i class="fas fa-exchange-alt" style="color: #1a73e8;"></i>
+                                <i class="fas fa-exchange-alt" style="color: #4C8C4A;"></i>
                             </div>
                             <div class="time">9:41</div>
                         </div>
